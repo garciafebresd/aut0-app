@@ -9,7 +9,7 @@
                 <a class="nav-link" [routerLink]="['price']">Precios</a>
             </li>
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" [routerLink]="['protected']">Protegida</a>
+                <a class="nav-link" [routerLink]="['protected']" *ngIf="authService.loggedIn">Protegida</a>
             </li>
         </ul>
         <span class="navbar-text">
